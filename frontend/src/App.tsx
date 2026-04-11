@@ -6,7 +6,7 @@ function App() {
   const [healthStatus, setHealthStatus] = useState<string | null>(null)
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/hello')
+    fetch('/api/hello')
       .then((res) => res.json())
       .then((data) => setMessage(data.message))
       .catch((err) => {
@@ -17,7 +17,7 @@ function App() {
 
   const testConnectivity = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/health')
+      const response = await fetch('/api/health')
       if (response.ok) {
         setHealthStatus('OK')
       } else {
