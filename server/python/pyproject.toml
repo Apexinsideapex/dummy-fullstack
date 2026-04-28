@@ -1,0 +1,9 @@
+[project]
+name = "dummy-fullstack-python"
+version = "1.0.0"
+description = "Barebones Flask + SQLite server"
+requires-python = ">=3.10"
+dependencies = [
+    "flask>=3.0.0",
+    "flask-cors>=4.0.0",
+]

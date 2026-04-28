@@ -47,6 +47,10 @@ desktop.ini
 *.swp
 *.swo
 
-# Vite/Bun specific
-.next/
-.turbo/
+# SQLite
+*.db
+*.db-journal
+
+# Ruby
+vendor/bundle/
+.bundle/

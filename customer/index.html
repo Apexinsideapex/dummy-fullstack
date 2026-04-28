@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Customer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Customer</h1>
+
+      <div id="login-view">
+        <p>Sign in with your email to start receiving messages.</p>
+        <form id="login-form">
+          <input type="email" id="email" placeholder="you@example.com" required />
+          <button type="submit">Sign in</button>
+        </form>
+      </div>
+
+      <div id="logged-in-view" hidden>
+        <p>Signed in as <strong id="current-email"></strong>.</p>
+        <p class="muted">Refresh the page to check for new messages.</p>
+        <button id="logout">Log out</button>
+      </div>
+    </div>
+  </body>
+</html>

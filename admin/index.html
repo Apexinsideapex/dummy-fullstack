@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Admin</h1>
+      <button id="refresh">Refresh users</button>
+    </header>
+
+    <main>
+      <aside id="user-list">
+        <h2>Users</h2>
+        <ul id="users"></ul>
+        <p class="muted" id="empty-state">No users yet. Have someone sign in on the customer site.</p>
+      </aside>
+
+      <section id="chat-panel" hidden>
+        <h2>Message <span id="selected-email"></span></h2>
+        <form id="chat-form">
+          <textarea id="message" rows="4" placeholder="Type a message…" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <p class="muted">The user will see this as an alert when they refresh their page.</p>
+      </section>
+    </main>
+  </body>
+</html>
